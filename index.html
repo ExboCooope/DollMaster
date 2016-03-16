@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <style type="text/css">
+        .num{
+            text-align: right;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="script/doll.js"></script>
+<script src="script/dollDataBase.js"></script>
+<script src="script/ui.js"></script>
+<script>
+   // var a=new AbilityHolder();
+   // document.body.appendChild(a.table_holder);
+    var b=new DollHolder();
+    document.body.appendChild(b.main_holder);
+   // var d=new Doll();
+  //  d.setDollDex(doll_Dex[1]).refreshData();
+   // b.setDoll(d);
+ //   a.setDoll(d);
+
+    document.body.appendChild(generateTypeSelector());
+</script>
+</body>
+</html>
