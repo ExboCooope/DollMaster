@@ -25,6 +25,38 @@
  //   a.setDoll(d);
 
     document.body.appendChild(generateTypeSelector());
+
+    function f1(){
+        var a=document.getElementById("abc");
+        a.innerHTML="123";
+
+        var i=+document.getElementById("num").innerHTML;
+        var result=[];
+        while(result.length<i){
+            var j=Math.random()*doll_Dex.length>>0;
+            var dol=doll_Dex[j];
+
+            if(dol.classname[0]!="N" && dol.id<150){
+                result.push(dol);
+            }
+        }
+
+        var s="";
+
+        for(i=0;i<result.length;i++){
+            s=s+" "+result[i].uniquename;
+        }
+
+        a.innerHTML=s;
+    }
+
+
+
 </script>
+<div>抽取</div>
+<div contenteditable="true" id="num">10</div>
+<div>个人形</div>
+<button onclick="f1()">开始</button>
+<div id="abc"></div>
 </body>
 </html>
